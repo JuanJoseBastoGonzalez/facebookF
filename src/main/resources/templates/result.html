@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+</head>
+<body>
+  
+   <div class="div1">
+    <h1>Result</h1>
+    <p>Thank you, <span th:text="${user.name}"></span>!</p>
+    <p>Your email address is: <span th:text="${user.email}"></span></p>
+   </div>
+</body>
+</html>

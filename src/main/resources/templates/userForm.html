@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>User Form</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+</head>
+
+<body>
+    <div class="cuerpo">
+        <div>
+            <h1>facebook</h1>
+            <pre class="subtitulo">
+Facebook te ayuda a comunicarte
+y compartir con las personas que
+forman parte de tu vida.
+            </pre>
+
+        </div>
+        <div class="div1">
+
+            <form action="#" th:action="@{/user}" th:object="${user}" method="post">
+                
+                <label for="email"></label>
+                <input type="email"class="postion" id="email" th:field="*{email}" placeholder=" Correo Electronico o Numero de Telefono" /><br><br>
+
+                <label for="name" > </label>
+                <input type="text" class="postion" id="name" th:field="*{name}" placeholder=" Contraseña" /><br><br>
+                
+<div class="boton">
+                <button type="submit" class="entrar">Iniciar sesion</button>
+</div>
+<div>
+    <a>¿Has olvidado la contraseña?</a>
+</div>
+<div>
+    <button>Crear cuenta nueva </button>
+</div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
